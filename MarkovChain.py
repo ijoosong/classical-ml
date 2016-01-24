@@ -1,5 +1,6 @@
 import random
 
+
 class MarkovChain:
     def __init__(self, value_list):
         self._values_added = 0
@@ -22,7 +23,7 @@ class MarkovChain:
         value_counts = self._matrix[value]
         value_index = self.randomly_choose(value_counts)
         if(value_index < 0):
-            raise RuntimeError, "Non-existent value selected."
+            raise RuntimeError, "Nonexistent value selected"
         else:
             return self._reverse_value_lookup[value_index]
 
@@ -35,4 +36,4 @@ class MarkovChain:
             counted_sum += choice_counts[index]
             if(counted_sum >= selected_count):
                 return index
-        raise RuntimeError, "Impossible value selection made. BAD!"
+        raise RuntimeError, "Impossible value selected"
