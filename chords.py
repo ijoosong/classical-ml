@@ -1,8 +1,4 @@
-from listFunctions import cumulativeSumZero
 
-
-def getPitches(intervals):
-    return cumulativeSumZero(intervals)
 
 major = [4, 3, 5]
 major7 = [4, 3, 4]
@@ -41,6 +37,9 @@ notes = {
      'a7':73, 'bb7':74, 'b7':75, 'c7':76, 'db7':77, 'd7':78, 'eb7':79, 'e7':80, 'f7':81, 'gb7':82, 'g7':83, 'ab7':84,
      'a8':85, 'bb8':86, 'b8':87, 'c8':88,  'r':0
      }
+# 1=whole, 2=half, 4=quarter, 8=eight
+beethoven_1 = [['I', 1], ['I', 1], ['V65', 1], ['V65', 1], ['I7', 1], ['I7', 1], ['V43', 1], ['I6', 2], ['iidim7', 2], ['V', 1]]
+
 
 # add augmented chords, augmented sixths, neopolitan iis
 duration = {'2w':512*3, 'w':256*3, 'h':128*3, 'q':64*3, 'e':32*3, 's':16*3, '64':8*3, '128':4*3,
