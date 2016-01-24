@@ -15,10 +15,9 @@ all_keywords = [
     'end_time', # End time of the note. Note (no pun intended): some keyword values can be deduced
                 # from others, but we include them here so we can specify properties of the note in different ways.
     'dynamic', # dynamic marking for the note (represented as a number). Eg. Fortissimo --> 2
-    'volume', # how loud the note should be, represented as a number between 0 and 1. If rest, volume = 0
-    'articulations', # list of articulations for the note
-    'comments', # commentary for the note
 ]
+
+
 class Note:
     def __init__(self, **args):
         self.type = None
@@ -71,5 +70,3 @@ class Note:
 
 def isNote(object):
     return isinstance(object, Note)
-
-

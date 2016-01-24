@@ -3,7 +3,8 @@ from listFunctions import cumulativeSumZero
 
 def getPitches(intervals):
     return cumulativeSumZero(intervals)
-
+chords = {'I': [4, 3, 5], 'I7': [4, 3, 4], 'I6': [3, 5], 'I64': [5, 4, 3], 'I43': [3, 4, 1], 'I42': [4, 1, 4],
+          'ii': [3, 4, 5], 'ii7': [3, 4, 3], }
 
 class Major:
     """Chord = major"""
