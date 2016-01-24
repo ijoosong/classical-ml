@@ -8,7 +8,7 @@ from pybrain.tools.xml.networkwriter import NetworkWriter
 from pybrain.tools.xml.networkreader import NetworkReader
 
 
-music_dir = './test/'
+music_dir = '././test/'
 
 
 def new_freq(old_freq, dist):
