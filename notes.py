@@ -52,7 +52,8 @@ class Note:
         self.pitch = newpitch
 
     def set_rhythm(self, newrhythm):
-        self.rhythm = newrhyth
+        self.rhythm = newrhythm
+
     def set_duration(self, newduration):
         self.duration = newduration
 
